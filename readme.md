@@ -12,7 +12,7 @@ npm install
 ```
 3. Run solution or tests
 ```
-npm run || npm test
+npm start || npm test
 ```
 
 #### Follow this path to battle:
