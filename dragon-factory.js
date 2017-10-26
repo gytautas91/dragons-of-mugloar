@@ -1,5 +1,5 @@
 /**
- * Possible weather codes
+ * Possible weather report codes. Values taken from weather API
  * @type {string}
  */
 const WEATHER_NORMAL = 'NMR';
@@ -14,10 +14,9 @@ const WEATHER_LONG_DAY = 'T E';
  * @param wingStrength
  * @param fireBreath
  */
-const createDragon = (clawSharpness = 0, scaleThickness = 0, wingStrength = 0, fireBreath = 0) =>
-  Object.assign({}, {
-    clawSharpness, scaleThickness, wingStrength, fireBreath,
-  });
+const createDragon = (clawSharpness = 0, scaleThickness = 0, wingStrength = 0, fireBreath = 0) => ({
+  clawSharpness, scaleThickness, wingStrength, fireBreath,
+});
 
 /**
  * Generates dragon based on knight points
@@ -47,7 +46,8 @@ const generateDragon = (knight) => {
       dragon.fireBreath = endurance - 1;
     }
   }
-  return dragon; // Hshhh..
+
+  return dragon;
 };
 
 /**
