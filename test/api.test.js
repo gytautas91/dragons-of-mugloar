@@ -15,7 +15,7 @@ describe('Dragons of Mugloar API', () => {
           assert.deepEqual(
             Object.keys(knight),
             ['name', 'attack', 'armor', 'agility', 'endurance'],
-            'Returned knight object has unknown properties',
+            'Returned knight object has unknown properties'
           );
 
           const knightPointSum = knight.attack + knight.armor + knight.agility + knight.endurance;
@@ -33,11 +33,11 @@ describe('Dragons of Mugloar API', () => {
             const weatherCode = forecast.report.code;
             assert(
               weatherCode !== undefined,
-              `Returned weather forecast report code is undefined for game id ${game.gameId}`,
+              `Returned weather forecast report code is undefined for game id ${game.gameId}`
             );
             assert(
               Object.values(WEATHER_CODES).indexOf(weatherCode) !== -1,
-              `Provided weather code ${weatherCode} does not exist.`,
+              `Provided weather code ${weatherCode} does not exist.`
             );
             done();
           }));

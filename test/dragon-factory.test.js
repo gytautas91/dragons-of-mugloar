@@ -34,31 +34,31 @@ describe('Dragons Factory', () => {
       assert.deepEqual(
         createAdjustedDragon(createKnight(), WEATHER_CODES.WEATHER_LONG_DAY),
         createDragon(5, 5, 5, 5),
-        'Dragon is not zen out ',
+        'Dragon is not zen out '
       );
       assert.deepEqual(
         createAdjustedDragon(createKnight(), WEATHER_CODES.WEATHER_FOG),
         createDragon(1, 1, 9, 9),
-        'Dragon is not suited for the foggy battle',
+        'Dragon is not suited for the foggy battle'
       );
 
       assert.deepEqual(
         createAdjustedDragon(createKnight(), WEATHER_CODES.WEATHER_STORM),
         undefined,
-        'Dragon is not suited for the stormy battle',
+        'Dragon is not suited for the stormy battle'
       );
 
       assert.deepEqual(
         createAdjustedDragon(createKnight(), WEATHER_CODES.WEATHER_FLOOD),
         createDragon(10, 10, 0, 0),
-        'Dragon is not suited for the watery battle',
+        'Dragon is not suited for the watery battle'
       );
 
       const knight = createKnight(4, 5, 5, 6);
       assert.deepEqual(
         createAdjustedDragon(knight, WEATHER_CODES.WEATHER_NORMAL),
         generateDragon(knight),
-        'Dragon is not suited for the normal battle',
+        'Dragon is not suited for the normal battle'
       );
     });
   });
