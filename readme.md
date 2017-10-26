@@ -6,7 +6,7 @@
 ```
 git clone https://github.com/gytis88/dragons-of-mugloar.git && cd ./dragons-of-mugloar
 ```
-2. Install required depandencies
+2. Install required dependencies
 ```
 npm install
 ```
