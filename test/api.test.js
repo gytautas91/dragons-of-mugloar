@@ -37,7 +37,7 @@ describe('Dragons of Mugloar API', () => {
             );
             assert(
               Object.values(WEATHER_CODES).indexOf(weatherCode) !== -1,
-              'Provided weather code ${} does not exist.',
+              `Provided weather code ${weatherCode} does not exist.`,
             );
             done();
           }));

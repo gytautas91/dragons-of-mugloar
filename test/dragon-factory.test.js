@@ -1,10 +1,9 @@
 const assert = require('assert');
 const { WEATHER_CODES, createAdjustedDragon, createDragon, generateDragon } = require('../dragon-factory');
 
-const createKnight = (attack = 0, armor = 0, agility = 0, endurance = 0) =>
-  Object.assign({}, {
-    attack, armor, agility, endurance,
-  });
+const createKnight = (attack = 0, armor = 0, agility = 0, endurance = 0) => ({
+  attack, armor, agility, endurance,
+});
 
 describe('Dragons Factory', () => {
   describe('#Create base dragon', () => {
@@ -46,7 +45,7 @@ describe('Dragons Factory', () => {
       assert.deepEqual(
         createAdjustedDragon(createKnight(), WEATHER_CODES.WEATHER_STORM),
         undefined,
-        'Dragon is not suited for the foggy battle',
+        'Dragon is not suited for the stormy battle',
       );
 
       assert.deepEqual(
