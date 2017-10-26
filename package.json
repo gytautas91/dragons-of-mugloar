@@ -1,0 +1,22 @@
+{
+  "name": "dragons-of-mugloar",
+  "version": "0.0.1",
+  "description": "Hope we’re not just the biological boot loader for digital superintelligence. Unfortunately, that is increasingly probable.",
+  "main": "index.js",
+  "author": "Gytautas Pilkauskas",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^1.7.3",
+    "xml2json": "^0.11.0"
+  },
+  "devDependencies": {
+    "mocha": "^4.0.1",
+    "eslint": "^4.8.0",
+    "eslint-config-airbnb-base": "^12.0.2",
+    "eslint-plugin-import": "^2.7.0"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha",
+    "start": "node ./index.js"
+  }
+}
